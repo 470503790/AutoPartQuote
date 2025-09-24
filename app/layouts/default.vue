@@ -94,9 +94,11 @@
 
 <script setup lang="ts">
 // Set HTML lang attribute
+const { locale } = useI18n()
+
 useHead({
   htmlAttrs: {
-    lang: () => useI18n().locale.value
+    lang: 'en'
   }
 })
 </script>
