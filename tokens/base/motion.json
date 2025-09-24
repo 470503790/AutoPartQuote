@@ -1,0 +1,95 @@
+{
+  "motion": {
+    "duration": {
+      "instant": {
+        "$type": "duration",
+        "$value": "0ms",
+        "$description": "Instant duration - no animation"
+      },
+      "fast": {
+        "$type": "duration",
+        "$value": "150ms",
+        "$description": "Fast duration - quick transitions"
+      },
+      "base": {
+        "$type": "duration",
+        "$value": "250ms",
+        "$description": "Base duration - standard transitions"
+      },
+      "slow": {
+        "$type": "duration",
+        "$value": "350ms",
+        "$description": "Slow duration - deliberate transitions"
+      },
+      "slower": {
+        "$type": "duration",
+        "$value": "500ms",
+        "$description": "Slower duration - emphasis transitions"
+      }
+    },
+    "easing": {
+      "linear": {
+        "$type": "cubicBezier",
+        "$value": [0, 0, 1, 1],
+        "$description": "Linear easing - constant speed"
+      },
+      "ease": {
+        "$type": "cubicBezier",
+        "$value": [0.25, 0.1, 0.25, 1],
+        "$description": "Default ease - natural feeling"
+      },
+      "easeIn": {
+        "$type": "cubicBezier",
+        "$value": [0.42, 0, 1, 1],
+        "$description": "Ease in - slow start"
+      },
+      "easeOut": {
+        "$type": "cubicBezier",
+        "$value": [0, 0, 0.58, 1],
+        "$description": "Ease out - slow end"
+      },
+      "easeInOut": {
+        "$type": "cubicBezier",
+        "$value": [0.42, 0, 0.58, 1],
+        "$description": "Ease in out - slow start and end"
+      },
+      "bounce": {
+        "$type": "cubicBezier",
+        "$value": [0.68, -0.55, 0.265, 1.55],
+        "$description": "Bounce easing - playful overshoot"
+      }
+    }
+  },
+  "opacity": {
+    "transparent": {
+      "$type": "number",
+      "$value": 0,
+      "$description": "Fully transparent"
+    },
+    "subtle": {
+      "$type": "number",
+      "$value": 0.05,
+      "$description": "Barely visible"
+    },
+    "light": {
+      "$type": "number",
+      "$value": 0.1,
+      "$description": "Light opacity"
+    },
+    "medium": {
+      "$type": "number",
+      "$value": 0.5,
+      "$description": "Medium opacity"
+    },
+    "heavy": {
+      "$type": "number",
+      "$value": 0.8,
+      "$description": "Heavy opacity"
+    },
+    "opaque": {
+      "$type": "number",
+      "$value": 1,
+      "$description": "Fully opaque"
+    }
+  }
+}

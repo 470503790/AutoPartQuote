@@ -52,3 +52,11 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Design Tokens - Node.js dependencies
+node_modules/
+
+# Design Tokens - Build outputs (keep for this demo)
+# dist/
+# tokens.raw.json
+# tokens.sd.json

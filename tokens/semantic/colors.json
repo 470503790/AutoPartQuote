@@ -1,0 +1,154 @@
+{
+  "color": {
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.base.gray.900}",
+        "$description": "Primary text color"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.base.gray.600}",
+        "$description": "Secondary text color"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.base.gray.400}",
+        "$description": "Tertiary text color"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{color.base.gray.300}",
+        "$description": "Disabled text color"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.base.white}",
+        "$description": "Inverse text color for dark backgrounds"
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{color.base.blue.600}",
+        "$description": "Link text color"
+      },
+      "linkHover": {
+        "$type": "color",
+        "$value": "{color.base.blue.700}",
+        "$description": "Link hover text color"
+      }
+    },
+    "background": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.base.white}",
+        "$description": "Primary background color"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.base.gray.50}",
+        "$description": "Secondary background color"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.base.gray.100}",
+        "$description": "Tertiary background color"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{color.base.gray.900}",
+        "$description": "Inverse background color"
+      },
+      "overlay": {
+        "$type": "color",
+        "$value": "rgba(0, 0, 0, 0.5)",
+        "$description": "Overlay background color"
+      }
+    },
+    "border": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.base.gray.200}",
+        "$description": "Primary border color"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.base.gray.100}",
+        "$description": "Secondary border color"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{color.base.blue.500}",
+        "$description": "Focus border color"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.base.red.500}",
+        "$description": "Error border color"
+      }
+    },
+    "brand": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.base.blue.500}",
+        "$description": "Primary brand color"
+      },
+      "primaryHover": {
+        "$type": "color",
+        "$value": "{color.base.blue.600}",
+        "$description": "Primary brand hover color"
+      },
+      "primaryActive": {
+        "$type": "color",
+        "$value": "{color.base.blue.700}",
+        "$description": "Primary brand active color"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.base.gray.600}",
+        "$description": "Secondary brand color"
+      }
+    },
+    "status": {
+      "success": {
+        "$type": "color",
+        "$value": "{color.base.green.500}",
+        "$description": "Success status color"
+      },
+      "successBackground": {
+        "$type": "color",
+        "$value": "{color.base.green.50}",
+        "$description": "Success background color"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{color.base.yellow.500}",
+        "$description": "Warning status color"
+      },
+      "warningBackground": {
+        "$type": "color",
+        "$value": "{color.base.yellow.50}",
+        "$description": "Warning background color"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.base.red.500}",
+        "$description": "Error status color"
+      },
+      "errorBackground": {
+        "$type": "color",
+        "$value": "{color.base.red.50}",
+        "$description": "Error background color"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.base.blue.500}",
+        "$description": "Info status color"
+      },
+      "infoBackground": {
+        "$type": "color",
+        "$value": "{color.base.blue.50}",
+        "$description": "Info background color"
+      }
+    }
+  }
+}

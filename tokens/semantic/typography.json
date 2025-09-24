@@ -1,0 +1,130 @@
+{
+  "typography": {
+    "heading": {
+      "h1": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.5xl}",
+          "fontWeight": "{font.weight.bold}",
+          "lineHeight": "{font.lineHeight.tight}"
+        },
+        "$description": "H1 heading typography"
+      },
+      "h2": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.4xl}",
+          "fontWeight": "{font.weight.bold}",
+          "lineHeight": "{font.lineHeight.tight}"
+        },
+        "$description": "H2 heading typography"
+      },
+      "h3": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.3xl}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.snug}"
+        },
+        "$description": "H3 heading typography"
+      },
+      "h4": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.2xl}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.snug}"
+        },
+        "$description": "H4 heading typography"
+      },
+      "h5": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.xl}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.normal}"
+        },
+        "$description": "H5 heading typography"
+      },
+      "h6": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.lg}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.normal}"
+        },
+        "$description": "H6 heading typography"
+      }
+    },
+    "body": {
+      "large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontSize": "{font.size.lg}",
+          "fontWeight": "{font.weight.normal}",
+          "lineHeight": "{font.lineHeight.relaxed}"
+        },
+        "$description": "Large body text typography"
+      },
+      "base": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontSize": "{font.size.base}",
+          "fontWeight": "{font.weight.normal}",
+          "lineHeight": "{font.lineHeight.normal}"
+        },
+        "$description": "Base body text typography"
+      },
+      "small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.base}",
+          "fontSize": "{font.size.sm}",
+          "fontWeight": "{font.weight.normal}",
+          "lineHeight": "{font.lineHeight.normal}"
+        },
+        "$description": "Small body text typography"
+      }
+    },
+    "caption": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "{font.family.base}",
+        "fontSize": "{font.size.xs}",
+        "fontWeight": "{font.weight.normal}",
+        "lineHeight": "{font.lineHeight.tight}"
+      },
+      "$description": "Caption text typography"
+    },
+    "code": {
+      "inline": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.mono}",
+          "fontSize": "{font.size.sm}",
+          "fontWeight": "{font.weight.normal}",
+          "lineHeight": "{font.lineHeight.normal}"
+        },
+        "$description": "Inline code typography"
+      },
+      "block": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{font.family.mono}",
+          "fontSize": "{font.size.base}",
+          "fontWeight": "{font.weight.normal}",
+          "lineHeight": "{font.lineHeight.relaxed}"
+        },
+        "$description": "Block code typography"
+      }
+    }
+  }
+}
