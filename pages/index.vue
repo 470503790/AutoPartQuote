@@ -1,37 +1,37 @@
 <template>
   <div class="home">
     <section class="hero">
-      <h1>{{ $t ? $t('home.title') : 'Auto Parts Quote System' }}</h1>
-      <p>{{ $t ? $t('home.subtitle') : 'Find the right parts for your vehicle at the best prices' }}</p>
+      <h1>{{ $t('home.title') }}</h1>
+      <p>{{ $t('home.subtitle') }}</p>
       <div class="search-box">
         <input
           type="text"
-          :placeholder="$t ? $t('home.searchPlaceholder') : 'Enter part number or description'"
+          :placeholder="$t('home.searchPlaceholder')"
           v-model="searchQuery"
           class="search-input"
         />
         <button class="search-button" @click="performSearch">
-          {{ $t ? $t('home.searchButton') : 'Search' }}
+          {{ $t('home.searchButton') }}
         </button>
       </div>
     </section>
 
     <section class="featured-parts">
-      <h2>{{ $t ? $t('home.featuredParts') : 'Featured Parts' }}</h2>
+      <h2>{{ $t('home.featuredParts') }}</h2>
       <div class="parts-grid">
         <div v-for="part in featuredParts" :key="part.id" class="part-card">
           <img :src="part.image" :alt="part.name" />
           <h3>{{ part.name }}</h3>
           <p class="price">${{ part.price }}</p>
           <button class="add-to-quote-btn" @click="addToQuote(part)">
-            {{ $t ? $t('search.addToQuote') : 'Add to Quote' }}
+            {{ $t('search.addToQuote') }}
           </button>
         </div>
       </div>
     </section>
 
     <section class="popular-brands">
-      <h2>{{ $t ? $t('home.popularBrands') : 'Popular Brands' }}</h2>
+      <h2>{{ $t('home.popularBrands') }}</h2>
       <div class="brands-grid">
         <div v-for="brand in popularBrands" :key="brand.id" class="brand-card">
           <img :src="brand.logo" :alt="brand.name" />

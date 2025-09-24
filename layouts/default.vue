@@ -3,14 +3,14 @@
     <header class="header">
       <nav class="nav">
         <div class="nav-brand">
-          <NuxtLink to="/">{{ $t ? $t('home.title') : 'AutoPartQuote' }}</NuxtLink>
+          <NuxtLink to="/">{{ $t('home.title') }}</NuxtLink>
         </div>
         <div class="nav-links">
-          <NuxtLink to="/">{{ $t ? $t('nav.home') : 'Home' }}</NuxtLink>
-          <NuxtLink to="/search">{{ $t ? $t('nav.search') : 'Search Parts' }}</NuxtLink>
-          <NuxtLink to="/quote">{{ $t ? $t('nav.quote') : 'Get Quote' }}</NuxtLink>
-          <NuxtLink to="/about">{{ $t ? $t('nav.about') : 'About' }}</NuxtLink>
-          <NuxtLink to="/contact">{{ $t ? $t('nav.contact') : 'Contact' }}</NuxtLink>
+          <NuxtLink to="/">{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink to="/search">{{ $t('nav.search') }}</NuxtLink>
+          <NuxtLink to="/quote">{{ $t('nav.quote') }}</NuxtLink>
+          <NuxtLink to="/about">{{ $t('nav.about') }}</NuxtLink>
+          <NuxtLink to="/contact">{{ $t('nav.contact') }}</NuxtLink>
         </div>
         <LanguageSwitcher />
       </nav>

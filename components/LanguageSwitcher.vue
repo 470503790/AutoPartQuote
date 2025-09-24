@@ -1,8 +1,9 @@
 <template>
   <div class="language-switcher">
-    <label for="language-select">Language:</label>
+    <label for="language-select">{{ $t('common.languageSelector') }}:</label>
     <select 
       id="language-select"
+      :value="$i18n.locale"
       @change="switchLanguage"
       class="language-select"
     >

@@ -908,21 +908,15 @@ const _inlineRuntimeConfig = {
       "locales": [
         {
           "code": "en",
-          "iso": "en-US",
-          "name": "English",
-          "language": ""
+          "language": "en"
         },
         {
           "code": "zh",
-          "iso": "zh-CN",
-          "name": "中文",
-          "language": ""
+          "language": "zh"
         },
         {
           "code": "es",
-          "iso": "es-ES",
-          "name": "Español",
-          "language": ""
+          "language": "es"
         }
       ],
       "detectBrowserLanguage": {
@@ -1337,7 +1331,7 @@ const _yMbCXgfHlIYJY3WejHFodE2UOlzHYF72jauXoJfMgFs = (function(nitro) {
 
 const rootDir = "/home/runner/work/AutoPartQuote/AutoPartQuote";
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Find the right auto parts for your vehicle at the best prices. Get instant quotes from trusted suppliers."},{"name":"keywords","content":"auto parts, car parts, automotive, quotes, prices, brake pads, filters, engine parts"},{"name":"author","content":"AutoPartQuote"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"AutoPartQuote - Auto Parts Quote System"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
 const appRootTag = "div";
 
@@ -1559,21 +1553,15 @@ const vueI18nConfigs = [];
 const normalizedLocales = [
   {
     code: "en",
-    iso: "en-US",
-    name: "English",
-    language: undefined
+    language: "en"
   },
   {
     code: "zh",
-    iso: "zh-CN",
-    name: "中文",
-    language: undefined
+    language: "zh"
   },
   {
     code: "es",
-    iso: "es-ES",
-    name: "Español",
-    language: undefined
+    language: "es"
   }
 ];
 
