@@ -1,0 +1,28 @@
+{
+  "name": "autopartquote-design-tokens",
+  "version": "1.0.0",
+  "description": "Design Tokens system for AutoPartQuote project",
+  "main": "dist/tokens.js",
+  "scripts": {
+    "build": "npm run build:tokens && npm run build:css && npm run build:ts",
+    "build:tokens": "node scripts/build-tokens.js",
+    "build:css": "node scripts/build-css.js", 
+    "build:ts": "node scripts/build-ts.js",
+    "validate": "node scripts/validate-tokens.js",
+    "demo": "python3 -m http.server 3000",
+    "dev": "npm run build && npm run demo"
+  },
+  "devDependencies": {
+    "style-dictionary": "^3.9.0",
+    "fs-extra": "^11.1.1"
+  },
+  "keywords": [
+    "design-tokens",
+    "design-system",
+    "css-variables",
+    "figma",
+    "w3c"
+  ],
+  "author": "AutoPartQuote Team",
+  "license": "MIT"
+}

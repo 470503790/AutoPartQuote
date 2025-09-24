@@ -1,0 +1,38 @@
+{
+  "color": {
+    "surface": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.base.white}",
+        "$description": "Primary surface color - light theme"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.base.gray.50}",
+        "$description": "Secondary surface color - light theme"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.base.gray.100}",
+        "$description": "Tertiary surface color - light theme"
+      }
+    },
+    "content": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.base.gray.900}",
+        "$description": "Primary content color - light theme"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.base.gray.600}",
+        "$description": "Secondary content color - light theme"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{color.base.gray.400}",
+        "$description": "Tertiary content color - light theme"
+      }
+    }
+  }
+}

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPartQuote Design Tokens - Component Demo</title>
+    <link rel="stylesheet" href="../dist/tokens.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            background-color: var(--color-background-primary);
+            color: var(--color-text-primary);
+            line-height: var(--font-line-height-normal);
+            padding: var(--spacing-8);
+            transition: background-color var(--motion-duration-base) var(--motion-easing-ease);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: var(--spacing-12);
+        }
+
+        .header h1 {
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-brand-primary);
+            margin-bottom: var(--spacing-4);
+        }
+
+        .header p {
+            font-size: var(--font-size-lg);
+            color: var(--color-text-secondary);
+        }
+
+        .theme-switcher {
+            position: fixed;
+            top: var(--spacing-4);
+            right: var(--spacing-4);
+            background: var(--color-background-secondary);
+            border: 1px solid var(--color-border-primary);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-2) var(--spacing-4);
+            cursor: pointer;
+            transition: all var(--motion-duration-base) var(--motion-easing-ease);
+        }
+
+        .theme-switcher:hover {
+            background: var(--color-background-tertiary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-6);
+            margin-bottom: var(--spacing-12);
+        }
+
+        .demo-section {
+            background: var(--color-background-secondary);
+            border: 1px solid var(--color-border-primary);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-6);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .demo-section h2 {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-4);
+            color: var(--color-text-primary);
+        }
+
+        .demo-section h3 {
+            font-size: var(--font-size-lg);
+            font-weight: var(--font-weight-medium);
+            margin-bottom: var(--spacing-3);
+            color: var(--color-text-secondary);
+        }
+
+        /* Button Components */
+        .button {
+            display: inline-block;
+            padding: var(--spacing-3) var(--spacing-6);
+            margin: var(--spacing-1);
+            border: none;
+            border-radius: var(--radius-base);
+            font-size: var(--font-size-base);
+            font-weight: var(--font-weight-medium);
+            text-decoration: none;
+            cursor: pointer;
+            transition: all var(--motion-duration-fast) var(--motion-easing-ease);
+        }
+
+        .button-primary {
+            background-color: var(--color-brand-primary);
+            color: var(--color-text-inverse);
+        }
+
+        .button-primary:hover {
+            background-color: var(--color-brand-primary-hover);
+            box-shadow: var(--shadow-md);
+        }
+
+        .button-secondary {
+            background-color: var(--color-background-tertiary);
+            color: var(--color-text-primary);
+            border: 1px solid var(--color-border-primary);
+        }
+
+        .button-secondary:hover {
+            background-color: var(--color-background-primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .button-success {
+            background-color: var(--color-status-success);
+            color: var(--color-text-inverse);
+        }
+
+        .button-warning {
+            background-color: var(--color-status-warning);
+            color: var(--color-text-inverse);
+        }
+
+        .button-error {
+            background-color: var(--color-status-error);
+            color: var(--color-text-inverse);
+        }
+
+        /* Card Components */
+        .card {
+            background: var(--color-background-primary);
+            border: 1px solid var(--color-border-primary);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-6);
+            margin-bottom: var(--spacing-4);
+            box-shadow: var(--shadow-base);
+            transition: box-shadow var(--motion-duration-base) var(--motion-easing-ease);
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .card h4 {
+            font-size: var(--font-size-xl);
+            font-weight: var(--font-weight-semibold);
+            margin-bottom: var(--spacing-2);
+        }
+
+        .card p {
+            color: var(--color-text-secondary);
+            line-height: var(--font-line-height-relaxed);
+        }
+
+        /* Status Alerts */
+        .alert {
+            padding: var(--spacing-4);
+            border-radius: var(--radius-base);
+            margin-bottom: var(--spacing-3);
+            border-left: 4px solid;
+        }
+
+        .alert-success {
+            background-color: var(--color-status-success-background);
+            border-left-color: var(--color-status-success);
+            color: var(--color-status-success);
+        }
+
+        .alert-warning {
+            background-color: var(--color-status-warning-background);
+            border-left-color: var(--color-status-warning);
+            color: var(--color-status-warning);
+        }
+
+        .alert-error {
+            background-color: var(--color-status-error-background);
+            border-left-color: var(--color-status-error);
+            color: var(--color-status-error);
+        }
+
+        .alert-info {
+            background-color: var(--color-status-info-background);
+            border-left-color: var(--color-status-info);
+            color: var(--color-status-info);
+        }
+
+        /* Color Palette */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: var(--spacing-3);
+        }
+
+        .color-swatch {
+            text-align: center;
+        }
+
+        .color-circle {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--spacing-2);
+            border-radius: var(--radius-full);
+            border: 2px solid var(--color-border-primary);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .color-label {
+            font-size: var(--font-size-xs);
+            color: var(--color-text-tertiary);
+        }
+
+        /* Typography Demo */
+        .typography-demo h1 {
+            font-size: var(--font-size-5xl);
+            font-weight: var(--font-weight-bold);
+            line-height: var(--font-line-height-tight);
+            margin-bottom: var(--spacing-2);
+        }
+
+        .typography-demo h2 {
+            font-size: var(--font-size-4xl);
+            font-weight: var(--font-weight-bold);
+            line-height: var(--font-line-height-tight);
+            margin-bottom: var(--spacing-2);
+        }
+
+        .typography-demo h3 {
+            font-size: var(--font-size-3xl);
+            font-weight: var(--font-weight-semibold);
+            line-height: var(--font-line-height-snug);
+            margin-bottom: var(--spacing-2);
+        }
+
+        .typography-demo p {
+            font-size: var(--font-size-base);
+            line-height: var(--font-line-height-normal);
+            margin-bottom: var(--spacing-4);
+        }
+
+        .typography-demo .small {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+        }
+
+        .code {
+            font-family: var(--font-family-mono);
+            background: var(--color-background-tertiary);
+            padding: var(--spacing-1) var(--spacing-2);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-size-sm);
+        }
+    </style>
+</head>
+<body>
+    <div class="theme-switcher" onclick="toggleTheme()">
+        🌓 切换主题
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <h1>AutoPartQuote Design Tokens</h1>
+            <p>完整的设计令牌系统演示，支持明暗主题切换</p>
+        </header>
+
+        <div class="demo-grid">
+            <!-- Buttons Demo -->
+            <div class="demo-section">
+                <h2>按钮组件</h2>
+                <h3>基础按钮</h3>
+                <button class="button button-primary">主要按钮</button>
+                <button class="button button-secondary">次要按钮</button>
+                
+                <h3>状态按钮</h3>
+                <button class="button button-success">成功</button>
+                <button class="button button-warning">警告</button>
+                <button class="button button-error">错误</button>
+            </div>
+
+            <!-- Cards Demo -->
+            <div class="demo-section">
+                <h2>卡片组件</h2>
+                <div class="card">
+                    <h4>产品标题</h4>
+                    <p>这是一个使用设计令牌构建的卡片组件，展示了统一的间距、圆角和阴影效果。</p>
+                </div>
+                <div class="card">
+                    <h4>另一个产品</h4>
+                    <p>卡片组件自动适应主题变化，在明暗主题间无缝切换。</p>
+                </div>
+            </div>
+
+            <!-- Alerts Demo -->
+            <div class="demo-section">
+                <h2>状态提示</h2>
+                <div class="alert alert-success">
+                    ✅ 操作成功完成！
+                </div>
+                <div class="alert alert-warning">
+                    ⚠️ 请注意这个警告信息。
+                </div>
+                <div class="alert alert-error">
+                    ❌ 发生了一个错误。
+                </div>
+                <div class="alert alert-info">
+                    ℹ️ 这是一条信息提示。
+                </div>
+            </div>
+
+            <!-- Typography Demo -->
+            <div class="demo-section typography-demo">
+                <h2>排版系统</h2>
+                <h1>一级标题 H1</h1>
+                <h2>二级标题 H2</h2>
+                <h3>三级标题 H3</h3>
+                <p>这是正文内容，使用了统一的排版令牌。包括合适的字体大小、行高和颜色。</p>
+                <p class="small">这是小号文字，通常用于辅助信息。</p>
+                <p>内联代码示例：<span class="code">var(--color-brand-primary)</span></p>
+            </div>
+
+            <!-- Color Palette -->
+            <div class="demo-section">
+                <h2>色彩系统</h2>
+                <h3>品牌色</h3>
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background-color: var(--color-base-blue-500)"></div>
+                        <div class="color-label">Primary</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background-color: var(--color-base-gray-600)"></div>
+                        <div class="color-label">Secondary</div>
+                    </div>
+                </div>
+                
+                <h3>状态色</h3>
+                <div class="color-grid">
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background-color: var(--color-status-success)"></div>
+                        <div class="color-label">Success</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background-color: var(--color-status-warning)"></div>
+                        <div class="color-label">Warning</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background-color: var(--color-status-error)"></div>
+                        <div class="color-label">Error</div>
+                    </div>
+                    <div class="color-swatch">
+                        <div class="color-circle" style="background-color: var(--color-status-info)"></div>
+                        <div class="color-label">Info</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spacing Demo -->
+            <div class="demo-section">
+                <h2>间距系统</h2>
+                <div style="background: var(--color-background-tertiary); padding: var(--spacing-2); margin-bottom: var(--spacing-2); border-radius: var(--radius-sm);">
+                    Spacing 2: 8px
+                </div>
+                <div style="background: var(--color-background-tertiary); padding: var(--spacing-4); margin-bottom: var(--spacing-2); border-radius: var(--radius-sm);">
+                    Spacing 4: 16px
+                </div>
+                <div style="background: var(--color-background-tertiary); padding: var(--spacing-6); margin-bottom: var(--spacing-2); border-radius: var(--radius-sm);">
+                    Spacing 6: 24px
+                </div>
+                <div style="background: var(--color-background-tertiary); padding: var(--spacing-8); border-radius: var(--radius-sm);">
+                    Spacing 8: 32px
+                </div>
+            </div>
+        </div>
+
+        <footer style="text-align: center; color: var(--color-text-tertiary); font-size: var(--font-size-sm);">
+            <p>AutoPartQuote Design Tokens System Demo</p>
+            <p>所有样式基于设计令牌构建，支持主题切换和一致性保证</p>
+        </footer>
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            
+            // 保存用户偏好
+            localStorage.setItem('theme', newTheme);
+        }
+
+        // 初始化主题
+        function initTheme() {
+            const savedTheme = localStorage.getItem('theme');
+            const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const defaultTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+            
+            document.documentElement.setAttribute('data-theme', defaultTheme);
+        }
+
+        // 监听系统主题变化  
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+            if (!localStorage.getItem('theme')) {
+                document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+            }
+        });
+
+        // 页面加载时初始化主题
+        initTheme();
+    </script>
+</body>
+</html>

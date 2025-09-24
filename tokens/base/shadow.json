@@ -1,0 +1,93 @@
+{
+  "shadow": {
+    "none": {
+      "$type": "shadow",
+      "$value": {
+        "color": "transparent",
+        "offsetX": "0",
+        "offsetY": "0",
+        "blur": "0",
+        "spread": "0"
+      },
+      "$description": "No shadow"
+    },
+    "sm": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0, 0, 0, 0.05)",
+        "offsetX": "0",
+        "offsetY": "1px",
+        "blur": "2px",
+        "spread": "0"
+      },
+      "$description": "Small shadow"
+    },
+    "base": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0, 0, 0, 0.1)",
+        "offsetX": "0",
+        "offsetY": "1px",
+        "blur": "3px",
+        "spread": "0"
+      },
+      "$description": "Base shadow"
+    },
+    "md": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0, 0, 0, 0.1)",
+        "offsetX": "0",
+        "offsetY": "4px",
+        "blur": "6px",
+        "spread": "-1px"
+      },
+      "$description": "Medium shadow"
+    },
+    "lg": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0, 0, 0, 0.1)",
+        "offsetX": "0",
+        "offsetY": "10px",
+        "blur": "15px",
+        "spread": "-3px"
+      },
+      "$description": "Large shadow"
+    },
+    "xl": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0, 0, 0, 0.1)",
+        "offsetX": "0",
+        "offsetY": "20px",
+        "blur": "25px",
+        "spread": "-5px"
+      },
+      "$description": "Extra large shadow"
+    },
+    "2xl": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0, 0, 0, 0.25)",
+        "offsetX": "0",
+        "offsetY": "25px",
+        "blur": "50px",
+        "spread": "-12px"
+      },
+      "$description": "2X large shadow"
+    },
+    "inner": {
+      "$type": "shadow",
+      "$value": {
+        "color": "rgba(0, 0, 0, 0.06)", 
+        "offsetX": "0",
+        "offsetY": "2px",
+        "blur": "4px",
+        "spread": "0",
+        "inset": true
+      },
+      "$description": "Inner shadow"
+    }
+  }
+}

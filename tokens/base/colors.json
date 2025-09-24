@@ -1,0 +1,276 @@
+{
+  "color": {
+    "base": {
+      "gray": {
+        "50": {
+          "$type": "color",
+          "$value": "#fafafa",
+          "$description": "Lightest gray"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f5f5f5",
+          "$description": "Very light gray"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#e5e5e5",
+          "$description": "Light gray"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#d4d4d4",
+          "$description": "Medium light gray"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#a3a3a3",
+          "$description": "Medium gray"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#737373",
+          "$description": "Default gray"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#525252",
+          "$description": "Medium dark gray"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#404040",
+          "$description": "Dark gray"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#262626",
+          "$description": "Very dark gray"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#171717",
+          "$description": "Darkest gray"
+        }
+      },
+      "blue": {
+        "50": {
+          "$type": "color",
+          "$value": "#eff6ff",
+          "$description": "Lightest blue"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#dbeafe",
+          "$description": "Very light blue"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#bfdbfe",
+          "$description": "Light blue"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#93c5fd",
+          "$description": "Medium light blue"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#60a5fa",
+          "$description": "Medium blue"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#3b82f6",
+          "$description": "Default blue - Primary brand color"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#2563eb",
+          "$description": "Medium dark blue"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#1d4ed8",
+          "$description": "Dark blue"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#1e40af",
+          "$description": "Very dark blue"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#1e3a8a",
+          "$description": "Darkest blue"
+        }
+      },
+      "green": {
+        "50": {
+          "$type": "color",
+          "$value": "#f0fdf4",
+          "$description": "Lightest green"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#dcfce7",
+          "$description": "Very light green"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#bbf7d0",
+          "$description": "Light green"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#86efac",
+          "$description": "Medium light green"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#4ade80",
+          "$description": "Medium green"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#22c55e",
+          "$description": "Default green - Success color"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#16a34a",
+          "$description": "Medium dark green"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#15803d",
+          "$description": "Dark green"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#166534",
+          "$description": "Very dark green"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#14532d",
+          "$description": "Darkest green"
+        }
+      },
+      "red": {
+        "50": {
+          "$type": "color",
+          "$value": "#fef2f2",
+          "$description": "Lightest red"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fee2e2",
+          "$description": "Very light red"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#fecaca",
+          "$description": "Light red"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#fca5a5",
+          "$description": "Medium light red"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#f87171",
+          "$description": "Medium red"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ef4444",
+          "$description": "Default red - Error color"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#dc2626",
+          "$description": "Medium dark red"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#b91c1c",
+          "$description": "Dark red"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#991b1b",
+          "$description": "Very dark red"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#7f1d1d",
+          "$description": "Darkest red"
+        }
+      },
+      "yellow": {
+        "50": {
+          "$type": "color",
+          "$value": "#fefce8",
+          "$description": "Lightest yellow"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fef3c7",
+          "$description": "Very light yellow"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#fed7aa",
+          "$description": "Light yellow"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#fdba74",
+          "$description": "Medium light yellow"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#fb923c",
+          "$description": "Medium yellow"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#f59e0b",
+          "$description": "Default yellow - Warning color"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#d97706",
+          "$description": "Medium dark yellow"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#b45309",
+          "$description": "Dark yellow"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#92400e",
+          "$description": "Very dark yellow"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#78350f",
+          "$description": "Darkest yellow"
+        }
+      },
+      "white": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Pure white"
+      },
+      "black": {
+        "$type": "color",
+        "$value": "#000000",
+        "$description": "Pure black"
+      }
+    }
+  }
+}
