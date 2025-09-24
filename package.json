@@ -1,0 +1,35 @@
+{
+  "name": "autopartquote",
+  "version": "1.0.0",
+  "description": "Automated parts inquiry system with batch file upload and parsing",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "dotnet run --project AutoPartQuote.Api",
+    "dev:frontend": "cd autopart-quote-frontend && npm start",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:backend": "dotnet build",
+    "build:frontend": "cd autopart-quote-frontend && npm run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "dotnet test",
+    "test:frontend": "cd autopart-quote-frontend && npm test -- --watchAll=false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/470503790/AutoPartQuote.git"
+  },
+  "keywords": [
+    "auto-parts",
+    "inquiry",
+    "batch-upload",
+    "excel-parsing",
+    "ocr",
+    "typescript",
+    "react",
+    "dotnet"
+  ],
+  "author": "470503790",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
