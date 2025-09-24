@@ -183,7 +183,7 @@ const trackInquiry = () => {
   router.push(`/inquiry/track?id=${inquiryId.value}`)
 }
 
-// Redirect if no inquiry ID is provided
+// Analytics tracking
 onMounted(() => {
   if (!route.query.id) {
     // Could redirect to home or inquiry page
@@ -198,16 +198,6 @@ onMounted(() => {
       'event_label': 'Auto Parts Inquiry'
     })
   }
-})
-
-// JSON-LD structured data for successful inquiry
-useJsonLd({
-  '@context': 'https://schema.org',
-  '@type': 'Order',
-  identifier: inquiryId.value,
-  orderStatus: 'OrderProcessing',
-  orderDate: new Date().toISOString(),
-  description: 'Auto parts inquiry submitted successfully'
 })
 </script>
 
