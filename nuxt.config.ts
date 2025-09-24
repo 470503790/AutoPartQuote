@@ -1,0 +1,49 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+  modules: [
+    '@nuxtjs/i18n'
+  ],
+  app: {
+    head: {
+      title: 'AutoPartQuote - Auto Parts Quote System',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: 'Find the right auto parts for your vehicle at the best prices. Get instant quotes from trusted suppliers.' },
+        { name: 'keywords', content: 'auto parts, car parts, automotive, quotes, prices, brake pads, filters, engine parts' },
+        { name: 'author', content: 'AutoPartQuote' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ]
+    }
+  },
+  i18n: {
+    strategy: 'prefix_except_default',
+    defaultLocale: 'en',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English'
+      },
+      {
+        code: 'zh',
+        iso: 'zh-CN',
+        name: '中文'
+      },
+      {
+        code: 'es',
+        iso: 'es-ES',
+        name: 'Español'
+      }
+    ],
+    vueI18n: './i18n.config.ts',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    }
+  }
+})

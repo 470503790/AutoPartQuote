@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "首页",
+    "search": "搜索配件",
+    "quote": "获取报价",
+    "about": "关于我们",
+    "contact": "联系我们"
+  },
+  "home": {
+    "title": "汽车配件报价系统",
+    "subtitle": "为您的车辆找到合适的配件，价格最优",
+    "searchPlaceholder": "输入配件编号或描述",
+    "searchButton": "搜索",
+    "featuredParts": "精选配件",
+    "popularBrands": "热门品牌"
+  },
+  "search": {
+    "title": "搜索汽车配件",
+    "filters": "筛选条件",
+    "category": "类别",
+    "brand": "品牌",
+    "priceRange": "价格范围",
+    "sortBy": "排序方式",
+    "results": "搜索结果",
+    "noResults": "未找到符合条件的配件",
+    "addToQuote": "添加到报价单"
+  },
+  "quote": {
+    "title": "报价请求",
+    "yourItems": "您的商品",
+    "itemName": "商品名称",
+    "quantity": "数量",
+    "unitPrice": "单价",
+    "totalPrice": "总价",
+    "contactInfo": "联系信息",
+    "name": "姓名",
+    "email": "邮箱地址",
+    "phone": "电话号码",
+    "company": "公司（选填）",
+    "message": "附加信息",
+    "submitQuote": "提交报价请求",
+    "success": "报价请求提交成功！"
+  },
+  "about": {
+    "title": "关于我们",
+    "description": "我们是领先的汽车配件供应商，提供优质配件，价格具有竞争力。",
+    "mission": "我们的使命",
+    "missionText": "快速高效地为客户提供合适的汽车配件。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "address": "地址",
+    "phone": "电话",
+    "email": "邮箱",
+    "hours": "营业时间",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "subject": "主题",
+      "message": "留言",
+      "send": "发送消息"
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "error": "错误",
+    "retry": "重试",
+    "cancel": "取消",
+    "confirm": "确认",
+    "close": "关闭",
+    "save": "保存",
+    "edit": "编辑",
+    "delete": "删除",
+    "back": "返回",
+    "next": "下一页",
+    "previous": "上一页",
+    "languageSelector": "语言"
+  }
+}

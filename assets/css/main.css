@@ -1,0 +1,167 @@
+/* Global styles for multilingual layout adaptations */
+
+/* Base styles for layout flexibility */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Language-specific adjustments */
+.lang-zh .text-content {
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+.lang-es .text-content {
+  line-height: 1.7;
+}
+
+.lang-ar .text-content,
+.lang-he .text-content {
+  line-height: 1.8;
+  text-align: right;
+}
+
+/* Responsive text sizing for different languages */
+@media (max-width: 768px) {
+  .lang-zh {
+    font-size: 14px;
+  }
+  
+  .lang-es {
+    font-size: 15px;
+  }
+  
+  .lang-ar,
+  .lang-he {
+    font-size: 15px;
+  }
+}
+
+/* Button adaptations for longer text */
+.btn {
+  padding: 0.75rem 1.5rem;
+  min-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lang-es .btn,
+.lang-zh .btn {
+  min-width: 140px;
+}
+
+/* Form adaptations */
+.form-input {
+  min-height: 44px; /* Touch-friendly */
+}
+
+.lang-ar .form-input,
+.lang-he .form-input {
+  text-align: right;
+}
+
+/* Navigation adaptations */
+.nav-links {
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Table adaptations for multilingual content */
+.responsive-table {
+  overflow-x: auto;
+}
+
+.responsive-table table {
+  min-width: 600px;
+}
+
+/* Animation classes */
+.locale-transition {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Print styles */
+@media print {
+  .lang-switcher,
+  .nav-links {
+    display: none;
+  }
+  
+  .text-content {
+    line-height: 1.4;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn {
+    border: 2px solid currentColor;
+  }
+  
+  .form-input {
+    border: 2px solid #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus styles for accessibility */
+.focus-visible {
+  outline: 2px solid #3498db;
+  outline-offset: 2px;
+}
+
+/* Error styles */
+.error-text {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* Success styles */
+.success-text {
+  color: #2ecc71;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(0,0,0,.3);
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

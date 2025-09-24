@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "search": "Search Parts",
+    "quote": "Get Quote",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Auto Parts Quote System",
+    "subtitle": "Find the right parts for your vehicle at the best prices",
+    "searchPlaceholder": "Enter part number or description",
+    "searchButton": "Search",
+    "featuredParts": "Featured Parts",
+    "popularBrands": "Popular Brands"
+  },
+  "search": {
+    "title": "Search Auto Parts",
+    "filters": "Filters",
+    "category": "Category",
+    "brand": "Brand",
+    "priceRange": "Price Range",
+    "sortBy": "Sort By",
+    "results": "Search Results",
+    "noResults": "No parts found matching your criteria",
+    "addToQuote": "Add to Quote"
+  },
+  "quote": {
+    "title": "Quote Request",
+    "yourItems": "Your Items",
+    "itemName": "Item Name",
+    "quantity": "Quantity",
+    "unitPrice": "Unit Price",
+    "totalPrice": "Total Price",
+    "contactInfo": "Contact Information",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "company": "Company (Optional)",
+    "message": "Additional Message",
+    "submitQuote": "Submit Quote Request",
+    "success": "Quote request submitted successfully!"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "We are a leading auto parts supplier providing quality parts at competitive prices.",
+    "mission": "Our Mission",
+    "missionText": "To connect customers with the right auto parts quickly and efficiently."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Business Hours",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "languageSelector": "Language"
+  }
+}

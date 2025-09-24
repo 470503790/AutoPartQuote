@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "search": "Buscar Repuestos",
+    "quote": "Obtener Cotización",
+    "about": "Acerca de",
+    "contact": "Contacto"
+  },
+  "home": {
+    "title": "Sistema de Cotización de Repuestos de Auto",
+    "subtitle": "Encuentre las repuestos correctas para su vehículo a los mejores precios",
+    "searchPlaceholder": "Ingrese número de repuesto o descripción",
+    "searchButton": "Buscar",
+    "featuredParts": "Repuestos Destacadas",
+    "popularBrands": "Marcas Populares"
+  },
+  "search": {
+    "title": "Buscar Repuestos de Auto",
+    "filters": "Filtros",
+    "category": "Categoría",
+    "brand": "Marca",
+    "priceRange": "Rango de Precios",
+    "sortBy": "Ordenar Por",
+    "results": "Resultados de Búsqueda",
+    "noResults": "No se encontraron repuestos que coincidan con sus criterios",
+    "addToQuote": "Agregar a Cotización"
+  },
+  "quote": {
+    "title": "Solicitud de Cotización",
+    "yourItems": "Sus Artículos",
+    "itemName": "Nombre del Artículo",
+    "quantity": "Cantidad",
+    "unitPrice": "Precio Unitario",
+    "totalPrice": "Precio Total",
+    "contactInfo": "Información de Contacto",
+    "name": "Nombre Completo",
+    "email": "Dirección de Email",
+    "phone": "Número de Teléfono",
+    "company": "Empresa (Opcional)",
+    "message": "Mensaje Adicional",
+    "submitQuote": "Enviar Solicitud de Cotización",
+    "success": "¡Solicitud de cotización enviada exitosamente!"
+  },
+  "about": {
+    "title": "Acerca de Nosotros",
+    "description": "Somos un proveedor líder de repuestos de automóviles que proporciona repuestos de calidad a precios competitivos.",
+    "mission": "Nuestra Misión",
+    "missionText": "Conectar a los clientes con los repuestos de auto correctos de manera rápida y eficiente."
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "address": "Dirección",
+    "phone": "Teléfono",
+    "email": "Email",
+    "hours": "Horario de Atención",
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "send": "Enviar Mensaje"
+    }
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "languageSelector": "Idioma"
+  }
+}
